@@ -4,18 +4,55 @@
 }
 h1 {
   margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.75em;
+
 }
 
-p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+
+div.container {
+  position: relative;
+  box-sizing: border-box;
+  border: 3px solid black;
+  margin: 15px;
+  height: 180px;
+  background-color: gray;
 }
+p.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 28px;
+  border: 2px solid black;
+  font-size: 1.25em;
+  margin: 0px;
+  text-align: center;
+}
+ p.text {
+  margin: 30px 10px 10px 10px;
+  color: black;
+ }
+
+ div#Sushi > p.title {
+  color: black;
+  background-color: yellow;
+  border-top: 2px solid yellow;
+  border-right: 2px solid yellow;
+ }
+ div#Beef > p.title {
+  color: white;
+  background-color: red;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+ }
+ div#Chicken > p.title {
+  color: black;
+  background-color: maroon;
+  border-top: 2px solid maroon;
+  border-right: 2px solid maroon;
+ }
+
 
 /* Simple Responsive Framework. */
 .row {
@@ -23,10 +60,9 @@ p {
 }
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -67,10 +103,9 @@ p {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
